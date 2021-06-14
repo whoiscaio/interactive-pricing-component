@@ -13,9 +13,7 @@
 
 header {
   padding: 15rem 0;
-  background: #fafbff;
   text-align: center;
-  border-bottom-left-radius: 15rem;
 }
 header h1 {
   color: #293356;
@@ -26,6 +24,22 @@ header h3 {
   font-size: 1.8rem;
   color: #858fad;
   font-weight: 600;
+}
+
+main {
+  height: 100%;
+  background: url("../assets/bg-pattern.svg") no-repeat;
+  background-position: top left;
+  background-size: 100% 65rem;
+}
+main .bg-wrapper {
+  height: 100%;
+  background: url("../assets/pattern-circles.svg") no-repeat;
+  background-position: center 11rem;
+  background-size: 18rem;
+}
+main section.container {
+  padding: 15rem;
 }
 
 /*# sourceMappingURL=main.css.map */

@@ -1,0 +1,15 @@
+main {
+  height: 100%;
+  background: url('../assets/bg-pattern.svg') no-repeat;
+  background-position: top left;
+  background-size: 100% 65rem;
+
+  .bg-wrapper {
+    height: 100%;
+    background: url('../assets/pattern-circles.svg') no-repeat;
+    background-position: center 11rem;
+    background-size: 18rem;
+  }
+
+  @import './section';
+}
