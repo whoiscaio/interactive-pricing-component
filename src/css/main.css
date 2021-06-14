@@ -1,5 +1,31 @@
+/* Primary Colors */
+/* Neutral Colors */
 :root {
+  font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+header {
+  padding: 15rem 0;
+  background: #fafbff;
+  text-align: center;
+  border-bottom-left-radius: 15rem;
+}
+header h1 {
+  color: #293356;
+  font-size: 4rem;
+  margin-bottom: 2rem;
+}
+header h3 {
+  font-size: 1.8rem;
+  color: #858fad;
+  font-weight: 600;
 }
 
 /*# sourceMappingURL=main.css.map */

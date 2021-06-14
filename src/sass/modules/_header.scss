@@ -1,0 +1,18 @@
+header {
+  padding: 15rem 0;
+  background: $very-pale-blue;
+  text-align: center;
+  border-bottom-left-radius: 15rem;
+
+  h1 {
+    color: $dark-desaturated-blue;
+    font-size: 4rem;
+    margin-bottom: 2rem;
+  }
+
+  h3 {
+    font-size: 1.8rem;
+    color: $grayish-blue;
+    font-weight: 600;
+  }
+}

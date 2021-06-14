@@ -1,3 +1,26 @@
+/* Primary Colors */
+
+$soft-cyan: #a5f3eb; // Full Slider Bar
+$strong-cyan: #10d5c2; // Slider Background
+$light-grayish-red: #feece7; // Discount Background
+$light-red: #ff8c66; // Discount Text
+$pale-blue: #bdccff; // CTA Text
+
+/* Neutral Colors */
+
+$white: #ffffff; // Pricing Component Background
+$very-pale-blue: #fafbff; // Main Background
+$light-grayish-blue: #eaeefb; // Empty Slider Bar
+$light-grayish-blue-bgtoggle: #cdd7ee; // Toggle Background
+$grayish-blue: #858fad; // Text
+$dark-desaturated-blue: #293356; // Text & CTA Background
 :root {
+  font-family: 'Manrope', Arial, Helvetica, sans-serif;
   font-size: 62.5%;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
