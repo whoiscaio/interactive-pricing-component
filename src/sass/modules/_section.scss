@@ -75,24 +75,28 @@ section.container {
       .toggle {
         background-color: $light-grayish-blue-bgtoggle;
         width: 8rem;
+        height: 2.8rem;
         padding: 0.4rem;
         border-radius: 1.4rem;
         transition: background-color .2s;
+        position: relative;
 
         div {
           width: 10%;
           padding: 1rem;
           background-color: $white;
           border-radius: 1rem;
-          transition: margin-left .2s;
+          left: .4rem;
+          transition: left .2s;
+          position: absolute;
         }
-      }
 
-      .active {
-        background-color: $soft-cyan;
-
-        div {
-          margin-left: auto;
+        &.active {
+          background-color: $soft-cyan;
+  
+          div {
+            left: 69%;
+          }
         }
       }
 
@@ -121,6 +125,6 @@ section.container {
   }
 
   .trial-area {
-    
+
   }
 }

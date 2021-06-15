@@ -114,22 +114,26 @@ main section.container .pricing-area .billing-area {
 main section.container .pricing-area .billing-area .toggle {
   background-color: #cdd7ee;
   width: 8rem;
+  height: 2.8rem;
   padding: 0.4rem;
   border-radius: 1.4rem;
   transition: background-color 0.2s;
+  position: relative;
 }
 main section.container .pricing-area .billing-area .toggle div {
   width: 10%;
   padding: 1rem;
   background-color: #ffffff;
   border-radius: 1rem;
-  transition: margin-left 0.2s;
+  left: 0.4rem;
+  transition: left 0.2s;
+  position: absolute;
 }
-main section.container .pricing-area .billing-area .active {
+main section.container .pricing-area .billing-area .toggle.active {
   background-color: #a5f3eb;
 }
-main section.container .pricing-area .billing-area .active div {
-  margin-left: auto;
+main section.container .pricing-area .billing-area .toggle.active div {
+  left: 69%;
 }
 main section.container .pricing-area .billing-area p {
   font-size: 1.6rem;
