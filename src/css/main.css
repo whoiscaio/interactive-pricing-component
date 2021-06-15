@@ -4,6 +4,16 @@
   font-family: "Manrope", Arial, Helvetica, sans-serif;
   font-size: 62.5%;
 }
+@media (min-width: 1800px) {
+  :root {
+    font-size: 67.5%;
+  }
+}
+@media (max-width: 1400px) {
+  :root {
+    font-size: 57.5%;
+  }
+}
 
 * {
   margin: 0;
@@ -39,7 +49,105 @@ main .bg-wrapper {
   background-size: 18rem;
 }
 main section.container {
-  padding: 15rem;
+  width: min(90%, 70rem);
+  margin: 0 auto;
+  background-color: #fafbff;
+  box-shadow: 2px 5px 12px -2px #293356;
+  padding: 5rem 4rem;
+}
+main section.container .pricing-area .dragger {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+main section.container .pricing-area .dragger span {
+  color: #858fad;
+}
+main section.container .pricing-area .dragger > span {
+  letter-spacing: 0.4rem;
+  font-size: 1.6rem;
+  font-weight: 800;
+}
+main section.container .pricing-area .dragger .slider {
+  width: 100%;
+  height: 16px;
+  background: #eaeefb;
+  position: relative;
+  margin: 5rem 0;
+  border-radius: 8px;
+}
+main section.container .pricing-area .dragger .slider .filled-area {
+  width: 50%;
+  height: 100%;
+  display: inline-block;
+  background: #a5f3eb;
+  border-radius: 8px;
+}
+main section.container .pricing-area .dragger .slider .draggable-btn {
+  position: absolute;
+  display: inline-block;
+  left: 50%;
+  transform: translate(-50%, -30%);
+  background-color: #10d5c2;
+  padding: 13px 10px;
+  border-radius: 50%;
+}
+main section.container .pricing-area .dragger .slider .draggable-btn img {
+  margin-top: 2px;
+}
+main section.container .pricing-area .dragger p {
+  font-size: 4rem;
+  font-weight: 800;
+  color: #293356;
+}
+main section.container .pricing-area .dragger p span {
+  font-size: 1.8rem;
+  margin-left: 1rem;
+}
+main section.container .pricing-area .billing-area {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  margin-top: 3rem;
+}
+main section.container .pricing-area .billing-area .toggle {
+  background-color: #cdd7ee;
+  width: 8rem;
+  padding: 0.4rem;
+  border-radius: 1.4rem;
+  transition: background-color 0.2s;
+}
+main section.container .pricing-area .billing-area .toggle div {
+  width: 10%;
+  padding: 1rem;
+  background-color: #ffffff;
+  border-radius: 1rem;
+  transition: margin-left 0.2s;
+}
+main section.container .pricing-area .billing-area .active {
+  background-color: #a5f3eb;
+}
+main section.container .pricing-area .billing-area .active div {
+  margin-left: auto;
+}
+main section.container .pricing-area .billing-area p {
+  font-size: 1.6rem;
+  color: #858fad;
+  margin: 0 2rem;
+}
+main section.container .pricing-area .billing-area .discount {
+  background-color: #feece7;
+  padding: 0.4rem 0.8rem;
+  border-radius: 1rem;
+  position: absolute;
+  top: 50%;
+  right: 5%;
+  transform: translateY(-50%);
+}
+main section.container .pricing-area .billing-area .discount span {
+  color: #ff8c66;
+  font-size: 1.2rem;
 }
 
 /*# sourceMappingURL=main.css.map */

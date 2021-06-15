@@ -1,3 +1,126 @@
 section.container {
-  padding: 15rem;
+  width: min(90%, 70rem);
+  margin: 0 auto;
+  background-color: $very-pale-blue;
+  box-shadow: 2px 5px 12px -2px $dark-desaturated-blue;
+  padding: 5rem 4rem;
+
+  .pricing-area {
+    .dragger {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+
+      span {
+        color: $grayish-blue;
+      }
+
+      > span {
+        letter-spacing: 0.4rem;
+        font-size: 1.6rem;
+        font-weight: 800;
+      }
+
+      .slider {
+        width: 100%;
+        height: 16px;
+        background: $light-grayish-blue;
+        position: relative;
+        margin: 5rem 0;
+
+        border-radius: 8px;
+
+        .filled-area {
+          width: 50%;
+          height: 100%;
+          display: inline-block;
+          background: $soft-cyan;
+          border-radius: 8px;
+        }
+
+        .draggable-btn {
+          position: absolute;
+          display: inline-block;
+          left: 50%;
+          transform: translate(-50%, -30%);
+          background-color: $strong-cyan;
+          padding: 13px 10px;
+          border-radius: 50%;
+
+          img {
+            margin-top: 2px;
+          }
+        }
+      }
+
+      p {
+        font-size: 4rem;
+        font-weight: 800;
+        color: $dark-desaturated-blue;
+
+        span {
+          font-size: 1.8rem;
+          margin-left: 1rem;
+        }
+      }
+    }
+
+    .billing-area {
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: relative;
+      margin-top: 3rem;
+
+      .toggle {
+        background-color: $light-grayish-blue-bgtoggle;
+        width: 8rem;
+        padding: 0.4rem;
+        border-radius: 1.4rem;
+        transition: background-color .2s;
+
+        div {
+          width: 10%;
+          padding: 1rem;
+          background-color: $white;
+          border-radius: 1rem;
+          transition: margin-left .2s;
+        }
+      }
+
+      .active {
+        background-color: $soft-cyan;
+
+        div {
+          margin-left: auto;
+        }
+      }
+
+      p {
+        font-size: 1.6rem;
+        color: $grayish-blue;
+        margin: 0 2rem;
+      }
+
+      .discount {
+        background-color: $light-grayish-red;
+        padding: .4rem .8rem;
+        border-radius: 1rem;
+
+        position: absolute;
+        top: 50%;
+        right: 5%;
+        transform: translateY(-50%);
+
+        span {
+          color: $light-red;
+          font-size: 1.2rem;
+        }
+      }
+    }
+  }
+
+  .trial-area {
+    
+  }
 }

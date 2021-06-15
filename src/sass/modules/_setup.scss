@@ -14,9 +14,18 @@ $light-grayish-blue: #eaeefb; // Empty Slider Bar
 $light-grayish-blue-bgtoggle: #cdd7ee; // Toggle Background
 $grayish-blue: #858fad; // Text
 $dark-desaturated-blue: #293356; // Text & CTA Background
+
 :root {
   font-family: 'Manrope', Arial, Helvetica, sans-serif;
   font-size: 62.5%;
+
+  @media (min-width: 1800px) {
+    font-size: 67.5%;
+  }
+
+  @media (max-width: 1400px) {
+    font-size: 57.5%;
+  }
 }
 
 * {
