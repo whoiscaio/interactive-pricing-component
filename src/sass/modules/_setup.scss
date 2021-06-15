@@ -20,11 +20,23 @@ $dark-desaturated-blue: #293356; // Text & CTA Background
   font-size: 62.5%;
 
   @media (min-width: 1800px) {
-    font-size: 67.5%;
+    font-size: 65%;
   }
 
   @media (max-width: 1400px) {
+    font-size: 60%;
+  }
+
+  @media (max-width: 1000px) {
     font-size: 57.5%;
+  }
+
+  @media (max-width: 800px) {
+    font-size: 52.5%;
+  }
+
+  @media (max-width: 600px) {
+    font-size: 47.5%;
   }
 }
 

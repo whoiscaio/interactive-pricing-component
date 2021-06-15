@@ -6,12 +6,27 @@
 }
 @media (min-width: 1800px) {
   :root {
-    font-size: 67.5%;
+    font-size: 65%;
   }
 }
 @media (max-width: 1400px) {
   :root {
+    font-size: 60%;
+  }
+}
+@media (max-width: 1000px) {
+  :root {
     font-size: 57.5%;
+  }
+}
+@media (max-width: 800px) {
+  :root {
+    font-size: 52.5%;
+  }
+}
+@media (max-width: 600px) {
+  :root {
+    font-size: 47.5%;
   }
 }
 
@@ -22,7 +37,7 @@
 }
 
 header {
-  padding: 15rem 0;
+  padding: 12rem 0;
   text-align: center;
 }
 header h1 {
@@ -50,15 +65,34 @@ main .bg-wrapper {
 }
 main section.container {
   width: min(90%, 70rem);
-  margin: 0 auto;
+  margin: 0 auto 2rem;
   background-color: #fafbff;
   box-shadow: 2px 5px 12px -2px #293356;
-  padding: 5rem 4rem;
+  padding: 5rem 0;
+}
+main section.container .pricing-area {
+  padding: 0 4rem;
 }
 main section.container .pricing-area .dragger {
   display: flex;
   flex-direction: column;
   align-items: center;
+}
+@media (min-width: 650px) {
+  main section.container .pricing-area .dragger {
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: space-between;
+  }
+  main section.container .pricing-area .dragger p {
+    order: 2;
+  }
+  main section.container .pricing-area .dragger .slider {
+    order: 3;
+  }
+  main section.container .pricing-area .dragger > span {
+    order: 1;
+  }
 }
 main section.container .pricing-area .dragger span {
   color: #858fad;
@@ -105,11 +139,11 @@ main section.container .pricing-area .dragger p span {
   margin-left: 1rem;
 }
 main section.container .pricing-area .billing-area {
+  margin: 1rem 0 4rem;
   display: flex;
   justify-content: center;
   align-items: center;
   position: relative;
-  margin-top: 3rem;
 }
 main section.container .pricing-area .billing-area .toggle {
   background-color: #cdd7ee;
@@ -146,12 +180,45 @@ main section.container .pricing-area .billing-area .discount {
   border-radius: 1rem;
   position: absolute;
   top: 50%;
-  right: 5%;
+  right: 5rem;
   transform: translateY(-50%);
 }
 main section.container .pricing-area .billing-area .discount span {
   color: #ff8c66;
   font-size: 1.2rem;
+}
+main section.container .trial-area {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  text-align: center;
+  padding: 0 4rem;
+  border-top: 1px solid #cdd7ee;
+}
+main section.container .trial-area ul {
+  margin-top: 2rem;
+  list-style: inside url("../assets/icon-check.svg");
+}
+main section.container .trial-area ul li {
+  font-size: 1.5rem;
+  color: #858fad;
+  margin: 1.4rem 0;
+}
+main section.container .trial-area a {
+  background-color: #293356;
+  padding: 1.6rem 4rem;
+  margin-top: 2rem;
+  font-size: 1.8rem;
+  text-decoration: none;
+  color: #ffffff;
+  border-radius: 4rem;
+}
+@media (min-width: 550px) {
+  main section.container .trial-area {
+    flex-direction: row;
+    justify-content: space-between;
+    text-align: left;
+  }
 }
 
 /*# sourceMappingURL=main.css.map */
