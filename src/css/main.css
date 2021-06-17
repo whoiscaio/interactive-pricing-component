@@ -122,15 +122,17 @@ main section.container .pricing-area .dragger .slider .draggable-btn {
   left: 50%;
   transform: translate(-50%, -30%);
   background-color: #10d5c2;
-  padding: 13px 10px;
-  border-radius: 50%;
-  cursor: pointer;
+  border-radius: 22px;
+  cursor: grab;
 }
-main section.container .pricing-area .dragger .slider .draggable-btn img {
-  margin-top: 2px;
+main section.container .pricing-area .dragger .slider .draggable-btn .img-handler {
+  padding: 22px;
+  border-radius: 22px;
+  background: url("../assets/icon-slider.svg") no-repeat center;
 }
 main section.container .pricing-area .dragger .slider .draggable-btn.being-dragged {
   background-color: #23AEA1;
+  cursor: grabbing;
 }
 main section.container .pricing-area .dragger p {
   font-size: 4rem;

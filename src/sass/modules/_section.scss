@@ -64,16 +64,18 @@ section.container {
           left: 50%;
           transform: translate(-50%, -30%);
           background-color: $strong-cyan;
-          padding: 13px 10px;
-          border-radius: 50%;
-          cursor: pointer;
+          border-radius: 22px;
+          cursor: grab;
 
-          img {
-            margin-top: 2px;
+          .img-handler {
+            padding: 22px;
+            border-radius: 22px;
+            background: url('../assets/icon-slider.svg') no-repeat center;
           }
 
           &.being-dragged {
             background-color: $very-strong-cyan;
+            cursor: grabbing;
           }
         }
       }
