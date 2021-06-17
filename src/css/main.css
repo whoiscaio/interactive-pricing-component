@@ -52,7 +52,6 @@ header h3 {
 }
 
 main {
-  height: 100%;
   background: url("../assets/bg-pattern.svg") no-repeat;
   background-position: top left;
   background-size: 100% 65rem;
@@ -153,6 +152,7 @@ main section.container .pricing-area .billing-area .toggle {
   border-radius: 1.4rem;
   transition: background-color 0.2s;
   position: relative;
+  cursor: pointer;
 }
 main section.container .pricing-area .billing-area .toggle div {
   width: 10%;
