@@ -1,5 +1,6 @@
 const element = document.querySelector('.draggable-btn');
 const slider = document.querySelector('.slider');
+const filledArea = document.querySelector('.filled-area');
 const elementStyle = getComputedStyle(element);
 const sliderStyle = getComputedStyle(slider);
 
@@ -24,6 +25,7 @@ function dragElement(e) {
     if(true) {
       if(newLeftValue >= 0 && newLeftValue <= rightLimit) {
         element.style.left = newLeftValue + "px";
+        filledArea.style.width = newLeftValue + "px";
       }
     }
 
