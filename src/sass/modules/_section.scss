@@ -66,9 +66,14 @@ section.container {
           background-color: $strong-cyan;
           padding: 13px 10px;
           border-radius: 50%;
+          cursor: pointer;
 
           img {
             margin-top: 2px;
+          }
+
+          &.being-dragged {
+            background-color: $very-strong-cyan;
           }
         }
       }
