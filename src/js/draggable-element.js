@@ -1,13 +1,15 @@
+import { billingOption } from './billing.js';
+import { priceUpdate } from './prices-mechanism.js';
+
 const element = document.querySelector('.draggable-btn');
 const slider = document.querySelector('.slider');
 const filledArea = document.querySelector('.filled-area');
-const elementStyle = getComputedStyle(element);
-const sliderStyle = getComputedStyle(slider);
+export const elementStyle = getComputedStyle(element);
+export const sliderStyle = getComputedStyle(slider);
 
 element.addEventListener('mousedown', dragElement);
 
 function dragElement(e) {
-  console.log('a');
   element.classList.add('being-dragged');
 
   window.addEventListener('mouseup', leaveElement);
@@ -30,6 +32,8 @@ function dragElement(e) {
     }
 
     currentPos = e.clientX;
+
+    priceUpdate(newLeftValue, rightLimit, billingOption);
   }
 
   function leaveElement() {
