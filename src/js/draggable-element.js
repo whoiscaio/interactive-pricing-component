@@ -24,6 +24,7 @@ function dragElementMobile(e) {
 
     if (newPos >= 0 && newPos <= rightLimit) {
       element.style.left = newPos + 'px';
+      filledArea.style.width = newPos + 'px';
     }
 
     priceUpdate(newPos, rightLimit, billingOption);
