@@ -39,6 +39,14 @@ $very-strong-cyan: #23AEA1;
   @media (max-width: 600px) {
     font-size: 47.5%;
   }
+
+  @media (max-width: 400px) {
+    font-size: 42.5%;
+  }
+
+  @media (max-width: 350px) {
+    font-size: 40%;
+  }
 }
 
 * {

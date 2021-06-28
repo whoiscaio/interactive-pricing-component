@@ -13,4 +13,12 @@ header {
     color: $grayish-blue;
     font-weight: 600;
   }
+
+  @media (max-width: 1000px) {
+    padding: 8rem 0;
+  }
+
+  @media (max-width: 400px) {
+    padding: 5rem 0;
+  }
 }

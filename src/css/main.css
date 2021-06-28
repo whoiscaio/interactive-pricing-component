@@ -29,6 +29,16 @@
     font-size: 47.5%;
   }
 }
+@media (max-width: 400px) {
+  :root {
+    font-size: 42.5%;
+  }
+}
+@media (max-width: 350px) {
+  :root {
+    font-size: 40%;
+  }
+}
 
 * {
   margin: 0;
@@ -49,6 +59,16 @@ header h3 {
   font-size: 1.8rem;
   color: #858fad;
   font-weight: 600;
+}
+@media (max-width: 1000px) {
+  header {
+    padding: 8rem 0;
+  }
+}
+@media (max-width: 400px) {
+  header {
+    padding: 5rem 0;
+  }
 }
 
 main {
