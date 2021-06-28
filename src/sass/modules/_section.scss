@@ -64,12 +64,12 @@ section.container {
           left: 50%;
           transform: translate(-50%, -30%);
           background-color: $strong-cyan;
-          border-radius: 22px;
+          border-radius: max(22px, 2.2rem);
           cursor: grab;
 
           .img-handler {
-            padding: 22px;
-            border-radius: 22px;
+            padding: max(22px, 2.2rem);
+            border-radius: max(22px, 2.2rem);
             background: url('../assets/icon-slider.svg') no-repeat center;
           }
 
@@ -134,19 +134,26 @@ section.container {
         margin: 0 2rem;
       }
 
-      .discount {
-        background-color: $light-grayish-red;
-        padding: 0.4rem 0.8rem;
-        border-radius: 1rem;
+      p:nth-of-type(2) {
+        position: relative;
 
-        position: absolute;
-        top: 50%;
-        right: 5rem;
-        transform: translateY(-50%);
-
-        span {
+        &::after {
+          content: '25% discount';
+          width: 8rem;
+          background-color: $light-grayish-red;
           color: $light-red;
+          padding: 0.4rem 0.8rem;
+          border-radius: 1rem;
           font-size: 1.2rem;
+
+          position: absolute;
+          left: 10.5rem;
+
+          @media (max-width: 550px) {
+            content: '-25%';
+            width: 3.2rem;
+            left: 6rem;
+          }
         }
       }
     }

@@ -60,12 +60,12 @@ header h3 {
   color: #858fad;
   font-weight: 600;
 }
-@media (max-width: 1000px) {
+@media (max-height: 1000px) {
   header {
     padding: 8rem 0;
   }
 }
-@media (max-width: 400px) {
+@media (max-height: 600px) {
   header {
     padding: 5rem 0;
   }
@@ -142,12 +142,12 @@ main section.container .pricing-area .dragger .slider .draggable-btn {
   left: 50%;
   transform: translate(-50%, -30%);
   background-color: #10d5c2;
-  border-radius: 22px;
+  border-radius: max(22px, 2.2rem);
   cursor: grab;
 }
 main section.container .pricing-area .dragger .slider .draggable-btn .img-handler {
-  padding: 22px;
-  border-radius: 22px;
+  padding: max(22px, 2.2rem);
+  border-radius: max(22px, 2.2rem);
   background: url("../assets/icon-slider.svg") no-repeat center;
 }
 main section.container .pricing-area .dragger .slider .draggable-btn.being-dragged {
@@ -200,18 +200,26 @@ main section.container .pricing-area .billing-area p {
   color: #858fad;
   margin: 0 2rem;
 }
-main section.container .pricing-area .billing-area .discount {
+main section.container .pricing-area .billing-area p:nth-of-type(2) {
+  position: relative;
+}
+main section.container .pricing-area .billing-area p:nth-of-type(2)::after {
+  content: "25% discount";
+  width: 8rem;
   background-color: #feece7;
+  color: #ff8c66;
   padding: 0.4rem 0.8rem;
   border-radius: 1rem;
-  position: absolute;
-  top: 50%;
-  right: 5rem;
-  transform: translateY(-50%);
-}
-main section.container .pricing-area .billing-area .discount span {
-  color: #ff8c66;
   font-size: 1.2rem;
+  position: absolute;
+  left: 10.5rem;
+}
+@media (max-width: 550px) {
+  main section.container .pricing-area .billing-area p:nth-of-type(2)::after {
+    content: "-25%";
+    width: 3.2rem;
+    left: 6rem;
+  }
 }
 main section.container .trial-area {
   display: flex;
