@@ -5,7 +5,7 @@ window.addEventListener('resize', changeContent);
 changeContent();
 
 function changeContent() {
-    if (window.matchMedia('(max-width: 400px)').matches) {
+    if (window.matchMedia('(max-width: 550px)').matches) {
       monthly.innerText = 'Monthly';
       yearly.innerText = 'Yearly';
     }else {
